@@ -404,7 +404,6 @@ vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libllvm-glnext.so
@@ -642,7 +641,6 @@ vendor/lib64/libidl.so
 vendor/lib64/libizat_core.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libllvm-glnext.so
@@ -760,6 +758,10 @@ vendor/radio/qcril_database/upgrade/9_remove_germany_ecc_110.sql
 vendor/radio/qcril_database/upgrade/10_israel_normal_ecc.sql
 # Necessary override to prevent issues
 vendor/lib/libhdrplusclient.so
+
+# Keymaster - from taimen QQ3A.200805.001
+vendor/lib/libkeymasterutils.so|0f655ea391a1d93ca01f902b9d3c6db02523d2ea
+vendor/lib64/libkeymasterutils.so|2dbc7805c2b21ec5bc2e44a508de579029917c88
 
 # Peripheral manager - from jasmine
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
