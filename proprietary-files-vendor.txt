@@ -45,7 +45,6 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/bin/port-bridge
 vendor/bin/qseecom_sample_client
-vendor/bin/qseecomd
 vendor/bin/qseeproxydaemon
 vendor/bin/qseeproxysampledaemon
 vendor/bin/qti
@@ -596,7 +595,6 @@ vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -758,6 +756,10 @@ vendor/radio/qcril_database/upgrade/9_remove_germany_ecc_110.sql
 vendor/radio/qcril_database/upgrade/10_israel_normal_ecc.sql
 # Necessary override to prevent issues
 vendor/lib/libhdrplusclient.so
+
+# DRM - from taimen QQ3A.200805.001
+vendor/bin/qseecomd|5e4cf745f5b8ef014889f5a901fcf3df0dedcc7b
+vendor/lib64/libStDrvInt.so|71167741ef9c61fdad055865122b2bd50f2cc54c
 
 # Keymaster - from taimen QQ3A.200805.001
 vendor/lib/libkeymasterutils.so|0f655ea391a1d93ca01f902b9d3c6db02523d2ea
