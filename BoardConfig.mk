@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+TARGET_KERNEL_CONFIG := taimen_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
 
