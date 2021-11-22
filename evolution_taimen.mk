@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common Project arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Project Evolution stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -22,14 +22,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit AOSP device configuration for Taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
-# Arrow
+# Based on ArrowOS Device Tree, by ReallySnow
 DEVICE_MAINTAINER := ReallySnow
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
+EVO_BUILD_TYPE := UNOFFICIAL
 
 # Override AOSP build properties
-PRODUCT_NAME := arrow_taimen
+PRODUCT_NAME := evolution_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
